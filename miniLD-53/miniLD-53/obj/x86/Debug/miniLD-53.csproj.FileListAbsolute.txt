@@ -1,0 +1,8 @@
+C:\Users\Mr.Cool\Desktop\LDD53\miniLD-53\miniLD-53\miniLD-53\miniLD-53\obj\x86\Debug\miniLD-53.csprojResolveAssemblyReference.cache
+C:\Users\Mr.Cool\Desktop\LDD53\miniLD-53\miniLD-53\miniLD-53\miniLD-53\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Mr.Cool\Desktop\LDD53\miniLD-53\miniLD-53\miniLD-53\miniLD-53\bin\x86\Debug\miniLD-53.exe
+C:\Users\Mr.Cool\Desktop\LDD53\miniLD-53\miniLD-53\miniLD-53\miniLD-53\bin\x86\Debug\miniLD-53.pdb
+C:\Users\Mr.Cool\Desktop\LDD53\miniLD-53\miniLD-53\miniLD-53\miniLD-53\obj\x86\Debug\miniLD-53.exe
+C:\Users\Mr.Cool\Desktop\LDD53\miniLD-53\miniLD-53\miniLD-53\miniLD-53\obj\x86\Debug\miniLD-53.pdb
+C:\Users\Mr.Cool\Desktop\LDD53\miniLD-53\miniLD-53\miniLD-53\miniLD-53\bin\x86\Debug\Content\Tile1.xnb
+C:\Users\Mr.Cool\Desktop\LDD53\miniLD-53\miniLD-53\miniLD-53\miniLD-53\bin\x86\Debug\Content\Tile2.xnb
