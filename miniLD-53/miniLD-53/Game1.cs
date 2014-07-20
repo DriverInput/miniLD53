@@ -19,9 +19,19 @@ namespace miniLD_53
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
+        enum GameState
+        {
+            mainMenu,
+            options,
+            Playing,
+        }
+        GameState currentGameState = GameState.mainMenu;
+
         int screenWidth = 800, screenHeight = 600;
 
+        Button button;
         Map map;
+        Player player;
 
         public Game1()
         {
@@ -38,6 +48,7 @@ namespace miniLD_53
         protected override void Initialize()
         {
             map = new Map();
+            player = new Player();
 
             base.Initialize();
         }
@@ -56,15 +67,33 @@ namespace miniLD_53
             graphics.ApplyChanges();
             IsMouseVisible = true;
 
+            button = new Button(Content.Load<Texture2D>("Button"), graphics.GraphicsDevice);
+            button.setPosition(new Vector2(350, 300));
+
             Tiles.Content = Content;
 
             map.Generate(new int[,]{
-                {0,0,0,0,0},
-                {0,0,2,0,0},
-                {0,0,2,2,0},
-                {1,2,2,2,2},
-                {2,2,1,2,2},
+                {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,3,3,3,3,3},
+                {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,2,2,2,2},
+                {0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,2,2,2,2},
+                {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,2,2,2,2},
+                {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,2,2,2,2},
+                {0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,2,2,2,2},
+                {3,3,3,3,2,0,0,3,3,3,3,3,3,3,3,3,3,3,3,3,2,1,2,2,2,2},
+                {2,2,1,2,2,0,0,2,2,2,1,2,2,2,2,1,2,2,2,2,2,1,2,2,2,2},
+                {2,2,1,2,2,0,0,2,2,2,1,2,2,2,2,1,2,2,2,2,2,1,2,2,2,2},
+                {2,2,1,2,2,0,0,2,2,2,1,2,2,2,2,1,2,2,2,2,2,1,2,2,2,2},
+                {2,2,1,2,2,0,0,2,2,2,1,2,2,2,2,1,2,2,2,2,2,1,2,2,2,2},
+                {2,2,1,2,2,0,0,2,2,2,1,2,2,2,2,1,2,2,2,2,2,1,2,2,2,2},
+                {2,2,1,2,2,0,0,2,2,2,1,2,2,2,2,1,2,2,2,2,2,1,2,2,2,2},
+                {2,2,1,2,2,0,0,2,2,2,1,2,2,2,2,1,2,2,2,2,2,1,2,2,2,2},
+                {2,2,1,2,2,0,0,2,2,2,1,2,2,2,2,1,2,2,2,2,2,1,2,2,2,2},
+                {2,2,1,2,2,0,0,2,2,2,1,2,2,2,2,1,2,2,2,2,2,1,2,2,2,2},
+                {2,2,1,2,2,0,0,2,2,2,1,2,2,2,2,1,2,2,2,2,2,1,2,2,2,2},
+                {2,2,1,2,2,0,0,2,2,2,1,2,2,2,2,1,2,2,2,2,2,1,2,2,2,2},
+                {2,2,1,2,2,1,2,2,2,2,1,2,2,2,2,1,2,2,2,2,2,1,2,2,2,2},
             }, 32);
+            player.Load(Content);
         }
 
         /// <summary>
@@ -83,12 +112,26 @@ namespace miniLD_53
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
-            ///(foreach (CollisionTiles tile in map.CollisionTiles)
-           /// {
-          ///      player.Collision(tile.Rectangle, map.Width, map.Height);
-         ///   }
-        ///  
-       ///    base.Update(gameTime);
+            MouseState mouse = Mouse.GetState();
+
+            switch (currentGameState)
+            {
+                case GameState.mainMenu:
+                    if (button.isClicked == true) currentGameState = GameState.Playing;
+                    button.Update(gameTime);
+                    break;
+
+                case GameState.Playing:
+                    player.Update();
+                    break;
+            }
+
+            foreach (CollisionTiles tile in map.CollisionTiles)
+            {
+                player.Collision(tile.Rectangle, map.Width, map.Height);
+            }
+          
+           base.Update(gameTime);
         }
 
         /// <summary>
@@ -100,7 +143,18 @@ namespace miniLD_53
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             spriteBatch.Begin();
+            switch(currentGameState)
+            {
+                case GameState.mainMenu:
+                    spriteBatch.Draw(Content.Load<Texture2D>("MainMenu"), new Rectangle(0, 0, screenWidth, screenHeight), Color.White);
+                    button.Draw(spriteBatch);
+                    break;
+
+                case GameState.Playing:
             map.Draw(spriteBatch);
+            player.draw(spriteBatch);
+            break;
+        }
             spriteBatch.End();
             base.Draw(gameTime);
         }

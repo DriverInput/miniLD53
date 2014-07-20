@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Mr.Cool\Desktop\LDD53\miniLD-53\miniLD-53\miniLD-53\miniLD-53\bin\x86\Debug\Content\Tile1.xnb</Output>
-      <Time>2014-07-20T00:30:33.7095533+02:00</Time>
+      <Output>C:\Users\Mr.Cool\Desktop\LDD53\miniLD53\miniLD-53\miniLD-53\bin\x86\Debug\Content\Tile1.xnb</Output>
+      <Time>2014-07-20T21:26:22.4360909+02:00</Time>
     </Item>
     <Item>
       <Source>Tile2.png</Source>
@@ -16,8 +16,44 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Mr.Cool\Desktop\LDD53\miniLD-53\miniLD-53\miniLD-53\miniLD-53\bin\x86\Debug\Content\Tile2.xnb</Output>
-      <Time>2014-07-20T00:30:42.5370582+02:00</Time>
+      <Output>C:\Users\Mr.Cool\Desktop\LDD53\miniLD53\miniLD-53\miniLD-53\bin\x86\Debug\Content\Tile2.xnb</Output>
+      <Time>2014-07-20T21:23:26.1220063+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Button.jpg</Source>
+      <Name>Button</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Mr.Cool\Desktop\LDD53\miniLD53\miniLD-53\miniLD-53\bin\x86\Debug\Content\Button.xnb</Output>
+      <Time>2014-03-31T20:47:08.0242898+02:00</Time>
+    </Item>
+    <Item>
+      <Source>MainMenu.jpg</Source>
+      <Name>MainMenu</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Mr.Cool\Desktop\LDD53\miniLD53\miniLD-53\miniLD-53\bin\x86\Debug\Content\MainMenu.xnb</Output>
+      <Time>2014-03-31T20:38:56.4205978+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Player.png</Source>
+      <Name>Player</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Mr.Cool\Desktop\LDD53\miniLD53\miniLD-53\miniLD-53\bin\x86\Debug\Content\Player.xnb</Output>
+      <Time>2014-07-20T21:02:01.8385495+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Tile3.png</Source>
+      <Name>Tile3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Mr.Cool\Desktop\LDD53\miniLD53\miniLD-53\miniLD-53\bin\x86\Debug\Content\Tile3.xnb</Output>
+      <Time>2014-07-20T21:33:01.2349009+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -25,10 +61,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Mr.Cool\Desktop\LDD53\miniLD-53\miniLD-53\miniLD-53\miniLD-53Content\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Mr.Cool\Desktop\LDD53\miniLD-53\miniLD-53\miniLD-53\miniLD-53\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Mr.Cool\Desktop\LDD53\miniLD-53\miniLD-53\miniLD-53\miniLD-53Content\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Mr.Cool\Desktop\LDD53\miniLD-53\miniLD-53\miniLD-53\miniLD-53\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Mr.Cool\Desktop\LDD53\miniLD53\miniLD-53\miniLD-53Content\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Mr.Cool\Desktop\LDD53\miniLD53\miniLD-53\miniLD-53\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Mr.Cool\Desktop\LDD53\miniLD53\miniLD-53\miniLD-53Content\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Mr.Cool\Desktop\LDD53\miniLD53\miniLD-53\miniLD-53\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
