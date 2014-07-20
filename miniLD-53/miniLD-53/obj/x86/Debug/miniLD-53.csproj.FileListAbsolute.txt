@@ -29,5 +29,7 @@ C:\Users\Mr.Cool\Documents\GitHub\MINILD53\miniLD-53\miniLD-53\obj\x86\Debug\min
 C:\Users\Mr.Cool\Documents\GitHub\MINILD53\miniLD-53\miniLD-53\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Mr.Cool\Documents\GitHub\MINILD53\miniLD-53\miniLD-53\obj\x86\Debug\miniLD-53.exe
 C:\Users\Mr.Cool\Documents\GitHub\MINILD53\miniLD-53\miniLD-53\obj\x86\Debug\miniLD-53.pdb
-C:\Users\Mr.Cool\Documents\GitHub\MINILD53\miniLD-53\miniLD-53\bin\x86\Debug\Content\LeftTexture.xnb
-C:\Users\Mr.Cool\Documents\GitHub\MINILD53\miniLD-53\miniLD-53\bin\x86\Debug\Content\RightTexture.xnb
+C:\Users\Mr.Cool\Documents\GitHub\MINILD53\miniLD-53\miniLD-53\bin\x86\Debug\Content\LeftTexture1.xnb
+C:\Users\Mr.Cool\Documents\GitHub\MINILD53\miniLD-53\miniLD-53\bin\x86\Debug\Content\LeftTexture2.xnb
+C:\Users\Mr.Cool\Documents\GitHub\MINILD53\miniLD-53\miniLD-53\bin\x86\Debug\Content\RightTexture1.xnb
+C:\Users\Mr.Cool\Documents\GitHub\MINILD53\miniLD-53\miniLD-53\bin\x86\Debug\Content\RightTexture2.xnb

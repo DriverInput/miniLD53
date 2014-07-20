@@ -39,8 +39,8 @@ namespace miniLD_53
 
         public void Load(ContentManager Content)
         {
-            leftWalk = Content.Load<Texture2D>("LeftTexture");
-            rightWalk = Content.Load<Texture2D>("RightTexture");
+            leftWalk = Content.Load<Texture2D>("LeftTexture1");
+            rightWalk = Content.Load<Texture2D>("RightTexture1");
 
             currentAnimation = rightWalk;
         }
