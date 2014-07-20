@@ -31,7 +31,7 @@ namespace miniLD_53
 
         Button button;
         Map map;
-        Player player1;
+        Player player;
 
         public Game1()
         {
@@ -48,7 +48,7 @@ namespace miniLD_53
         protected override void Initialize()
         {
             map = new Map();
-            player1 = new Player();
+            player = new Player();
 
             base.Initialize();
         }
@@ -93,7 +93,7 @@ namespace miniLD_53
                 {2,2,1,2,2,0,0,2,2,2,1,2,2,2,2,1,2,2,2,2,2,1,2,2,2,2},
                 {2,2,1,2,2,1,2,2,2,2,1,2,2,2,2,1,2,2,2,2,2,1,2,2,2,2},
             }, 32);
-            player1.Load(Content);
+            player.Load(Content);
         }
 
         /// <summary>
@@ -122,13 +122,13 @@ namespace miniLD_53
                     break;
 
                 case GameState.Playing:
-                    player1.Update();
+                    player.Update();
                     break;
             }
 
             foreach (CollisionTiles tile in map.CollisionTiles)
             {
-                player1.Collision(tile.Rectangle, map.Width, map.Height);
+                player.Collision(tile.Rectangle, map.Width, map.Height);
             }
           
            base.Update(gameTime);
@@ -152,7 +152,7 @@ namespace miniLD_53
 
                 case GameState.Playing:
             map.Draw(spriteBatch);
-            player1.draw(spriteBatch);
+            player.draw(spriteBatch);
             break;
         }
             spriteBatch.End();
