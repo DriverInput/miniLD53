@@ -13,10 +13,15 @@ namespace miniLD_53
 {
     class Player
     {
-        public Texture2D texture;
+        public Texture2D rightWalk, leftWalk, currentAnimation;
         public Rectangle rectangle;
         public Vector2 velocity;
         public Vector2 position = new Vector2(128, 32);
+        public Rectangle sourceRectangle;
+        public float elapsed;
+        public float delay = 200f;
+        private int frames = 0;
+
         public sbyte ctr = 1;
         public sbyte speed = 5;
 
@@ -33,22 +38,41 @@ namespace miniLD_53
 
         public Player() { }
 
-        public void Update()
+        public void Update(GameTime gameTime)
         {
             position += velocity;
             rectangle = new Rectangle((int)position.X, (int)position.Y, (int)32, 64);
 
-            movement();
+            movement(gameTime);
         }
 
         public void Load(ContentManager Content)
         {
-            texture = Content.Load<Texture2D>("Player");
+            leftWalk = Content.Load<Texture2D>("LeftTexture");
+            rightWalk = Content.Load<Texture2D>("RightTexture");
+
+            currentAnimation = rightWalk;
+        }
+
+        private void Animate(GameTime gameTime)
+        {
+            elapsed += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
+
+            if (elapsed >= delay)
+            {
+                if (frames > 3)
+                    frames = 0;
+                else
+                    frames++;
+                elapsed = 0;
+            }
+
+            sourceRectangle = new Rectangle(25 * frames, 0, 25, 46);
         }
 
         public void draw(SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(texture, rectangle, Color.White);
+            spriteBatch.Draw(currentAnimation, rectangle, sourceRectangle, Color.White);
         }
 
         public void Collision(Rectangle newRectangle, int xOffset, int yOffset)
@@ -77,7 +101,7 @@ namespace miniLD_53
             if (position.Y > yOffset - rectangle.Height) position.Y = yOffset - rectangle.Height;
         }
 
-        public void movement()
+        public void movement(GameTime gameTime)
         {
             switch (ctr)
             {
@@ -85,13 +109,19 @@ namespace miniLD_53
                     if (Keyboard.GetState().IsKeyDown(Keys.Left))
                     {
                         velocity.X = -speed;
+                        currentAnimation = leftWalk;
+                        Animate(gameTime);
                     }
                     else if (Keyboard.GetState().IsKeyDown(Keys.Right))
                     {
                         velocity.X = speed;
+                        currentAnimation = rightWalk;
+                        Animate(gameTime);
                     }
-                    else { velocity.X = 0; }
-
+                    else
+                    {
+                        velocity.X = 0f;
+                    }
                     if (Keyboard.GetState().IsKeyDown(Keys.Up) && hasJumped == false)
                     {
                         position.Y -= 5f;
