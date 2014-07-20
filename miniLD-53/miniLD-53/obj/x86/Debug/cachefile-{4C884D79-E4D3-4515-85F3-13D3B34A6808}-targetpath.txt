@@ -2,5 +2,6 @@ Content\Tile1.xnb
 Content\Tile2.xnb
 Content\Button.xnb
 Content\MainMenu.xnb
-Content\Player.xnb
 Content\Tile3.xnb
+Content\LeftTexture.xnb
+Content\RightTexture.xnb

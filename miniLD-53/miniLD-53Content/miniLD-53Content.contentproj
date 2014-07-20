@@ -66,15 +66,20 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Player.png">
-      <Name>Player</Name>
+    <Compile Include="Tile3.png">
+      <Name>Tile3</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Tile3.png">
-      <Name>Tile3</Name>
+    <Compile Include="LeftTexture.png">
+      <Name>LeftTexture</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="RightTexture.png">
+      <Name>RightTexture</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

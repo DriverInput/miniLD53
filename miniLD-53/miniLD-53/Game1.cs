@@ -122,7 +122,7 @@ namespace miniLD_53
                     break;
 
                 case GameState.Playing:
-                    player.Update();
+                    player.Update(gameTime);
                     break;
             }
 
