@@ -136,12 +136,14 @@ namespace miniLD_53
                         velocity.X = -speed;
                         currentAnimation = leftWalk;
                         Animate(gameTime);
+                        isMoving = true;
                     }
                     else if (Keyboard.GetState().IsKeyDown(Keys.D))
                     {
                         velocity.X = speed;
                         currentAnimation = rightWalk;
                         Animate(gameTime);
+                        isMoving = true;
                     }
                     else
                     {
