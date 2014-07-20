@@ -107,7 +107,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Button.cs" />
     <Compile Include="Map.cs" />
     <Compile Include="players.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

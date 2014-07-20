@@ -19,17 +19,8 @@ namespace miniLD_53
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
-        enum GameState
-        {
-            mainMenu,
-            options,
-            Playing,
-        }
-        GameState currentGameState = GameState.mainMenu;
-
         int screenWidth = 800, screenHeight = 600;
 
-        Button button;
         Map map;
 
         public Game1()
@@ -65,9 +56,6 @@ namespace miniLD_53
             graphics.ApplyChanges();
             IsMouseVisible = true;
 
-            button = new Button(Content.Load<Texture2D>("Button"), graphics.GraphicsDevice);
-            button.setPosition(new Vector2(350, 300));
-
             Tiles.Content = Content;
 
             map.Generate(new int[,]{
@@ -95,20 +83,6 @@ namespace miniLD_53
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
-            MouseState mouse = Mouse.GetState();
-
-            switch (currentGameState)
-            {
-                case GameState.mainMenu:
-                    if (button.isClicked == true) currentGameState = GameState.Playing;
-                    button.Update(gameTime);
-                    break;
-
-                case GameState.Playing:
-                    //player.Update();
-                    break;
-            }
-
             ///(foreach (CollisionTiles tile in map.CollisionTiles)
            /// {
           ///      player.Collision(tile.Rectangle, map.Width, map.Height);
@@ -126,17 +100,7 @@ namespace miniLD_53
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             spriteBatch.Begin();
-            switch(currentGameState)
-            {
-                case GameState.mainMenu:
-                    spriteBatch.Draw(Content.Load<Texture2D>("MainMenu"), new Rectangle(0, 0, screenWidth, screenHeight), Color.White);
-                    button.Draw(spriteBatch);
-                    break;
-
-                case GameState.Playing:
             map.Draw(spriteBatch);
-            break;
-        }
             spriteBatch.End();
             base.Draw(gameTime);
         }
