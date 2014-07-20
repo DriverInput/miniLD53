@@ -14,3 +14,5 @@ C:\Users\Mr.Cool\Desktop\LDD53\miniLD53\miniLD-53\miniLD-53\obj\x86\Debug\miniLD
 C:\Users\Mr.Cool\Desktop\LDD53\miniLD53\miniLD-53\miniLD-53\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Mr.Cool\Desktop\LDD53\miniLD53\miniLD-53\miniLD-53\obj\x86\Debug\miniLD-53.exe
 C:\Users\Mr.Cool\Desktop\LDD53\miniLD53\miniLD-53\miniLD-53\obj\x86\Debug\miniLD-53.pdb
+C:\Users\Mr.Cool\Desktop\LDD53\miniLD53\miniLD-53\miniLD-53\bin\x86\Debug\Content\Button.xnb
+C:\Users\Mr.Cool\Desktop\LDD53\miniLD53\miniLD-53\miniLD-53\bin\x86\Debug\Content\MainMenu.xnb

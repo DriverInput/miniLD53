@@ -19,6 +19,24 @@
       <Output>C:\Users\Mr.Cool\Desktop\LDD53\miniLD53\miniLD-53\miniLD-53\bin\x86\Debug\Content\Tile2.xnb</Output>
       <Time>2014-07-20T00:30:42.5370582+02:00</Time>
     </Item>
+    <Item>
+      <Source>Button.jpg</Source>
+      <Name>Button</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Mr.Cool\Desktop\LDD53\miniLD53\miniLD-53\miniLD-53\bin\x86\Debug\Content\Button.xnb</Output>
+      <Time>2014-03-31T20:47:08.0242898+02:00</Time>
+    </Item>
+    <Item>
+      <Source>MainMenu.jpg</Source>
+      <Name>MainMenu</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Mr.Cool\Desktop\LDD53\miniLD53\miniLD-53\miniLD-53\bin\x86\Debug\Content\MainMenu.xnb</Output>
+      <Time>2014-03-31T20:38:56.4205978+02:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
