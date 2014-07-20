@@ -32,6 +32,7 @@ namespace miniLD_53
         Button button;
         Map map;
         Player player1;
+        Player player2;
 
         public Game1()
         {
@@ -49,6 +50,7 @@ namespace miniLD_53
         {
             map = new Map();
             player1 = new Player( new Vector2(128, 32));
+            player2 = new Player(new Vector2(128*4, 32));
 
             base.Initialize();
         }
@@ -77,9 +79,9 @@ namespace miniLD_53
                 {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,2,2,2,2},
                 {0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,2,2,2,2},
                 {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,2,1,2,2,2,2},
-                {0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,2,1,2,2,2,2},
+                {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
                 {0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,2,2,2,2},
-                {3,3,3,3,2,0,0,3,3,3,3,0,0,0,0,0,0,0,0,0,2,1,2,2,2,2},
+                {3,3,3,3,2,0,0,3,3,3,3,3,3,3,3,3,3,3,3,3,2,1,2,2,2,2},
                 {2,2,1,2,2,0,0,2,2,2,1,0,0,0,0,0,2,2,2,2,2,1,2,2,2,2},
                 {2,2,1,2,2,0,0,2,2,2,1,2,2,2,2,1,2,2,2,2,2,1,2,2,2,2},
                 {2,2,1,2,2,0,0,2,2,2,1,2,2,2,2,1,2,2,2,2,2,1,2,2,2,2},
@@ -93,7 +95,8 @@ namespace miniLD_53
                 {2,2,1,2,2,0,0,2,2,2,1,2,2,2,2,1,2,2,2,2,2,1,2,2,2,2},
                 {2,2,1,2,2,1,2,2,2,2,1,2,2,2,2,1,2,2,2,2,2,1,2,2,2,2},
             }, 32);
-            player1.Load(Content);
+            player1.Load(Content, 1);
+            player2.Load(Content, 2);
         }
 
         /// <summary>
@@ -123,12 +126,14 @@ namespace miniLD_53
 
                 case GameState.Playing:
                     player1.Update(gameTime, 1);
+                    player2.Update(gameTime, 2);
                     break;
             }
 
             foreach (CollisionTiles tile in map.CollisionTiles)
             {
                 player1.Collision(tile.Rectangle, map.Width, map.Height);
+                player2.Collision(tile.Rectangle, map.Width, map.Height);
             }
           
            base.Update(gameTime);
@@ -153,6 +158,7 @@ namespace miniLD_53
                 case GameState.Playing:
             map.Draw(spriteBatch);
             player1.draw(spriteBatch);
+            player2.draw(spriteBatch);
             break;
         }
             spriteBatch.End();

@@ -37,10 +37,10 @@ namespace miniLD_53
             movement(gameTime, ctr);
         }
 
-        public void Load(ContentManager Content)
+        public void Load(ContentManager Content, sbyte playerNumber)
         {
-            leftWalk = Content.Load<Texture2D>("LeftTexture1");
-            rightWalk = Content.Load<Texture2D>("RightTexture1");
+            leftWalk = Content.Load<Texture2D>("LeftTexture" + playerNumber);
+            rightWalk = Content.Load<Texture2D>("RightTexture" + playerNumber);
 
             currentAnimation = rightWalk;
         }
@@ -122,12 +122,12 @@ namespace miniLD_53
                     if (Keyboard.GetState().IsKeyDown(Keys.Up) && hasJumped == false)
                     {
                         position.Y -= 5f;
-                        velocity.Y = -8f;
+                        velocity.Y = -10f;
                         hasJumped = true;
                     }
 
                     if (velocity.Y < 10)
-                        velocity.Y += 0.4f;
+                        velocity.Y += 0.5f;
                 break;
 
                 case 2:
@@ -151,12 +151,12 @@ namespace miniLD_53
                     if (Keyboard.GetState().IsKeyDown(Keys.W) && hasJumped == false)
                     {
                         position.Y -= 5f;
-                        velocity.Y = -8f;
+                        velocity.Y = -10f;
                         hasJumped = true;
                     }
 
                     if (velocity.Y < 10)
-                        velocity.Y += 0.4f;
+                        velocity.Y += 0.5f;
                 break;
             }
         }
