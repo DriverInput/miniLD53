@@ -95,7 +95,7 @@ namespace miniLD_53
                     if (Keyboard.GetState().IsKeyDown(Keys.Up) && hasJumped == false)
                     {
                         position.Y -= 5f;
-                        velocity.Y = -10f;
+                        velocity.Y = -8f;
                         hasJumped = true;
                     }
 
