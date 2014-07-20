@@ -26,7 +26,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Mr.Cool\Documents\GitHub\MINILD53\miniLD-53\miniLD-53\bin\x86\Debug\Content\Button.xnb</Output>
-      <Time>2014-03-31T20:47:08.0242898+02:00</Time>
+      <Time>2014-07-20T23:52:40.3151568+02:00</Time>
     </Item>
     <Item>
       <Source>MainMenu.jpg</Source>
@@ -47,22 +47,40 @@
       <Time>2014-07-20T21:41:32.5401458+02:00</Time>
     </Item>
     <Item>
-      <Source>LeftTexture.png</Source>
-      <Name>LeftTexture</Name>
+      <Source>LeftTexture1.png</Source>
+      <Name>LeftTexture1</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Mr.Cool\Documents\GitHub\MINILD53\miniLD-53\miniLD-53\bin\x86\Debug\Content\LeftTexture.xnb</Output>
-      <Time>2014-07-20T23:22:29.4985841+02:00</Time>
+      <Output>C:\Users\Mr.Cool\Documents\GitHub\MINILD53\miniLD-53\miniLD-53\bin\x86\Debug\Content\LeftTexture1.xnb</Output>
+      <Time>2014-07-21T00:02:54.111264+02:00</Time>
     </Item>
     <Item>
-      <Source>RightTexture.png</Source>
-      <Name>RightTexture</Name>
+      <Source>LeftTexture2.png</Source>
+      <Name>LeftTexture2</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Mr.Cool\Documents\GitHub\MINILD53\miniLD-53\miniLD-53\bin\x86\Debug\Content\RightTexture.xnb</Output>
+      <Output>C:\Users\Mr.Cool\Documents\GitHub\MINILD53\miniLD-53\miniLD-53\bin\x86\Debug\Content\LeftTexture2.xnb</Output>
+      <Time>2014-07-21T00:41:49.3698331+02:00</Time>
+    </Item>
+    <Item>
+      <Source>RightTexture1.png</Source>
+      <Name>RightTexture1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Mr.Cool\Documents\GitHub\MINILD53\miniLD-53\miniLD-53\bin\x86\Debug\Content\RightTexture1.xnb</Output>
       <Time>2014-07-20T23:21:32.9463495+02:00</Time>
+    </Item>
+    <Item>
+      <Source>RightTexture2.png</Source>
+      <Name>RightTexture2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Mr.Cool\Documents\GitHub\MINILD53\miniLD-53\miniLD-53\bin\x86\Debug\Content\RightTexture2.xnb</Output>
+      <Time>2014-07-21T00:40:32.5324383+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

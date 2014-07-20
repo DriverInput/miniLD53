@@ -73,13 +73,23 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="LeftTexture.png">
-      <Name>LeftTexture</Name>
+    <Compile Include="LeftTexture1.png">
+      <Name>LeftTexture1</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="RightTexture.png">
-      <Name>RightTexture</Name>
+    <Compile Include="LeftTexture2.png">
+      <Name>LeftTexture2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="RightTexture1.png">
+      <Name>RightTexture1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="RightTexture2.png">
+      <Name>RightTexture2</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
