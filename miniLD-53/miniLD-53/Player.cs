@@ -16,34 +16,24 @@ namespace miniLD_53
         public Texture2D rightWalk, leftWalk, currentAnimation;
         public Rectangle rectangle;
         public Vector2 velocity;
-        public Vector2 position = new Vector2(128, 32);
+        public Vector2 position;
         public Rectangle sourceRectangle;
         public float elapsed;
         public float delay = 200f;
-        private int frames = 0;
+        public sbyte frames = 1;
 
-        public sbyte ctr = 1;
         public sbyte speed = 5;
 
         private bool hasJumped = false;
 
-        //public Player(Texture2D newTexture, Rectangle newRectangle, sbyte newCtr, int rectX, int rectY)
-        //{
-          //  texture = newTexture;
-            //rectangle = newRectangle;
-            //rectangle.X = rectX;
-            //rectangle.Y = rectY;
-            //ctr = newCtr;
-        //}
+        public Player(Vector2 newPos) { position = newPos; }
 
-        public Player() { }
-
-        public void Update(GameTime gameTime)
+        public void Update(GameTime gameTime, sbyte ctr)
         {
             position += velocity;
             rectangle = new Rectangle((int)position.X, (int)position.Y, (int)32, 64);
 
-            movement(gameTime);
+            movement(gameTime, ctr);
         }
 
         public void Load(ContentManager Content)
@@ -60,10 +50,9 @@ namespace miniLD_53
 
             if (elapsed >= delay)
             {
+                frames++;
                 if (frames > 3)
-                    frames = 0;
-                else
-                    frames++;
+                    frames = 1;
                 elapsed = 0;
             }
 
@@ -101,7 +90,7 @@ namespace miniLD_53
             if (position.Y > yOffset - rectangle.Height) position.Y = yOffset - rectangle.Height;
         }
 
-        public void movement(GameTime gameTime)
+        public void movement(GameTime gameTime, sbyte ctr)
         {
             switch (ctr)
             {
@@ -121,6 +110,7 @@ namespace miniLD_53
                     else
                     {
                         velocity.X = 0f;
+                        frames = 0;
                     }
                     if (Keyboard.GetState().IsKeyDown(Keys.Up) && hasJumped == false)
                     {
