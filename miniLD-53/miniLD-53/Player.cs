@@ -25,6 +25,7 @@ namespace miniLD_53
         public sbyte speed = 5;
 
         private bool hasJumped = false;
+        public bool isMoving;
 
         public Player(Vector2 newPos) { position = newPos; }
 
@@ -50,9 +51,12 @@ namespace miniLD_53
 
             if (elapsed >= delay)
             {
-                frames++;
-                if (frames > 3)
-                    frames = 1;
+                if (isMoving == true)
+                {
+                    frames++;
+                    if (frames > 3)
+                        frames = 1;
+                } else {frames = 0;}
                 elapsed = 0;
             }
 
@@ -75,6 +79,7 @@ namespace miniLD_53
 
             if (rectangle.TouchLeftOf(newRectangle))
             {
+                position.X -= speed;
                 position.X = newRectangle.X - rectangle.Width - 2;
             }
             if (rectangle.TouchRightOf(newRectangle))
@@ -100,17 +105,19 @@ namespace miniLD_53
                         velocity.X = -speed;
                         currentAnimation = leftWalk;
                         Animate(gameTime);
+                        isMoving = true;
                     }
                     else if (Keyboard.GetState().IsKeyDown(Keys.Right))
                     {
                         velocity.X = speed;
                         currentAnimation = rightWalk;
                         Animate(gameTime);
+                        isMoving = true;
                     }
                     else
                     {
                         velocity.X = 0f;
-                        frames = 0;
+                        isMoving = false;
                     }
                     if (Keyboard.GetState().IsKeyDown(Keys.Up) && hasJumped == false)
                     {
@@ -124,15 +131,32 @@ namespace miniLD_53
                 break;
 
                 case 2:
-                    if (Keyboard.GetState().IsKeyDown(Keys.A))
+                     if (Keyboard.GetState().IsKeyDown(Keys.A))
                     {
                         velocity.X = -speed;
+                        currentAnimation = leftWalk;
+                        Animate(gameTime);
                     }
                     else if (Keyboard.GetState().IsKeyDown(Keys.D))
                     {
                         velocity.X = speed;
+                        currentAnimation = rightWalk;
+                        Animate(gameTime);
                     }
-                    else { velocity.X = 0; }
+                    else
+                    {
+                        velocity.X = 0f;
+                        frames = 0;
+                    }
+                    if (Keyboard.GetState().IsKeyDown(Keys.W) && hasJumped == false)
+                    {
+                        position.Y -= 5f;
+                        velocity.Y = -8f;
+                        hasJumped = true;
+                    }
+
+                    if (velocity.Y < 10)
+                        velocity.Y += 0.4f;
                 break;
             }
         }
