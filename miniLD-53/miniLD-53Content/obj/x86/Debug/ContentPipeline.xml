@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Mr.Cool\Desktop\LDD53\miniLD-53\miniLD-53\miniLD-53\miniLD-53\bin\x86\Debug\Content\Tile1.xnb</Output>
-      <Time>2014-07-20T00:30:33.7095533+02:00</Time>
+      <Output>C:\Users\Kriss\Documents\GitHub\miniLD-53\miniLD-53\miniLD-53\bin\x86\Debug\Content\Tile1.xnb</Output>
+      <Time>2014-07-20T01:26:01.4399229+02:00</Time>
     </Item>
     <Item>
       <Source>Tile2.png</Source>
@@ -16,8 +16,26 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Mr.Cool\Desktop\LDD53\miniLD-53\miniLD-53\miniLD-53\miniLD-53\bin\x86\Debug\Content\Tile2.xnb</Output>
-      <Time>2014-07-20T00:30:42.5370582+02:00</Time>
+      <Output>C:\Users\Kriss\Documents\GitHub\miniLD-53\miniLD-53\miniLD-53\bin\x86\Debug\Content\Tile2.xnb</Output>
+      <Time>2014-07-20T01:26:01.442923+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Button.jpg</Source>
+      <Name>Button</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Kriss\Documents\GitHub\miniLD-53\miniLD-53\miniLD-53\bin\x86\Debug\Content\Button.xnb</Output>
+      <Time>2014-07-20T02:32:06.7559642+02:00</Time>
+    </Item>
+    <Item>
+      <Source>MainMenu.jpg</Source>
+      <Name>MainMenu</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Kriss\Documents\GitHub\miniLD-53\miniLD-53\miniLD-53\bin\x86\Debug\Content\MainMenu.xnb</Output>
+      <Time>2014-07-20T02:32:06.7869662+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -25,10 +43,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Mr.Cool\Desktop\LDD53\miniLD-53\miniLD-53\miniLD-53\miniLD-53Content\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Mr.Cool\Desktop\LDD53\miniLD-53\miniLD-53\miniLD-53\miniLD-53\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Mr.Cool\Desktop\LDD53\miniLD-53\miniLD-53\miniLD-53\miniLD-53Content\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Mr.Cool\Desktop\LDD53\miniLD-53\miniLD-53\miniLD-53\miniLD-53\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Kriss\Documents\GitHub\miniLD-53\miniLD-53\miniLD-53Content\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Kriss\Documents\GitHub\miniLD-53\miniLD-53\miniLD-53\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Kriss\Documents\GitHub\miniLD-53\miniLD-53\miniLD-53Content\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Kriss\Documents\GitHub\miniLD-53\miniLD-53\miniLD-53\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
@@ -57,7 +75,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2014-02-17T00:33:38.2555778+01:00</Value>
+        <Value>2014-01-04T15:11:51.929405+01:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>
