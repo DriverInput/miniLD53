@@ -157,6 +157,7 @@ namespace miniLD_53
                     break;
 
                 case GameState.Playing:
+                    spriteBatch.Draw(Content.Load<Texture2D>("Background"), new Rectangle(0, 0, screenWidth, screenHeight), Color.White);
             map.Draw(spriteBatch);
             player1.draw(spriteBatch);
             player2.draw(spriteBatch);
