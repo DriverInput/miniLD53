@@ -8,7 +8,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Mr.Cool\Documents\GitHub\MINILD53\miniLD-53\miniLD-53\bin\x86\Debug\Content\Tile1.xnb</Output>
-      <Time>2014-07-20T21:41:32.5351456+02:00</Time>
+      <Time>2014-07-21T00:50:48.0596444+02:00</Time>
     </Item>
     <Item>
       <Source>Tile2.png</Source>
@@ -17,7 +17,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Mr.Cool\Documents\GitHub\MINILD53\miniLD-53\miniLD-53\bin\x86\Debug\Content\Tile2.xnb</Output>
-      <Time>2014-07-20T21:41:32.5381457+02:00</Time>
+      <Time>2014-07-21T00:49:15.5673542+02:00</Time>
     </Item>
     <Item>
       <Source>Button.jpg</Source>
@@ -44,7 +44,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Mr.Cool\Documents\GitHub\MINILD53\miniLD-53\miniLD-53\bin\x86\Debug\Content\Tile3.xnb</Output>
-      <Time>2014-07-20T21:41:32.5401458+02:00</Time>
+      <Time>2014-07-21T00:51:52.5573335+02:00</Time>
     </Item>
     <Item>
       <Source>LeftTexture1.png</Source>
@@ -81,6 +81,15 @@
       <Options>None</Options>
       <Output>C:\Users\Mr.Cool\Documents\GitHub\MINILD53\miniLD-53\miniLD-53\bin\x86\Debug\Content\RightTexture2.xnb</Output>
       <Time>2014-07-21T00:40:32.5324383+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Tile4.png</Source>
+      <Name>Tile4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Mr.Cool\Documents\GitHub\MINILD53\miniLD-53\miniLD-53\bin\x86\Debug\Content\Tile4.xnb</Output>
+      <Time>2014-07-21T18:19:00.1028347+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

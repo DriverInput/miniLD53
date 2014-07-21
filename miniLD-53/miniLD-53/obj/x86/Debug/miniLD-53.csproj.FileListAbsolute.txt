@@ -33,3 +33,4 @@ C:\Users\Mr.Cool\Documents\GitHub\MINILD53\miniLD-53\miniLD-53\bin\x86\Debug\Con
 C:\Users\Mr.Cool\Documents\GitHub\MINILD53\miniLD-53\miniLD-53\bin\x86\Debug\Content\LeftTexture2.xnb
 C:\Users\Mr.Cool\Documents\GitHub\MINILD53\miniLD-53\miniLD-53\bin\x86\Debug\Content\RightTexture1.xnb
 C:\Users\Mr.Cool\Documents\GitHub\MINILD53\miniLD-53\miniLD-53\bin\x86\Debug\Content\RightTexture2.xnb
+C:\Users\Mr.Cool\Documents\GitHub\MINILD53\miniLD-53\miniLD-53\bin\x86\Debug\Content\Tile4.xnb
