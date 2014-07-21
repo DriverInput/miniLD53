@@ -107,6 +107,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bullets.cs" />
     <Compile Include="Button.cs" />
     <Compile Include="Map.cs" />
     <Compile Include="Player.cs" />
