@@ -54,7 +54,7 @@ namespace miniLD_53
                 if (isMoving == true)
                 {
                     frames++;
-                    if (frames > 3)
+                    if (frames > 4)
                         frames = 1;
                 } else {frames = 0;}
                 elapsed = 0;
@@ -148,7 +148,7 @@ namespace miniLD_53
                     else
                     {
                         velocity.X = 0f;
-                        frames = 0;
+                        isMoving = false;
                     }
                     if (Keyboard.GetState().IsKeyDown(Keys.W) && hasJumped == false)
                     {
