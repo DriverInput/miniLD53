@@ -25,7 +25,7 @@ namespace miniLD_53
 
         public void Load(ContentManager Content)
         {
-            texture = Content.Load<Texture2D>("Tile1.png");
+            texture = Content.Load<Texture2D>("Tile1");
             origin.X = texture.Width / 2;
             origin.Y = texture.Height / 2;
         }
