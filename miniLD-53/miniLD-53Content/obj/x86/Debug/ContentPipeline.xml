@@ -91,6 +91,15 @@
       <Output>C:\Users\Mr.Cool\Documents\GitHub\MINILD53\miniLD-53\miniLD-53\bin\x86\Debug\Content\Tile4.xnb</Output>
       <Time>2014-07-21T18:19:00.1028347+02:00</Time>
     </Item>
+    <Item>
+      <Source>Background.png</Source>
+      <Name>Background</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Mr.Cool\Documents\GitHub\MINILD53\miniLD-53\miniLD-53\bin\x86\Debug\Content\Background.xnb</Output>
+      <Time>2014-07-21T19:53:42.1748306+02:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
